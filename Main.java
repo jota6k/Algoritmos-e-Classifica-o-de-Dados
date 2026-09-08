@@ -1,0 +1,19 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        Vehicle vehicle = new Vehicle(5, 50, 30);
+
+        Truck truck = new Truck(3, 100, 15, 5000);
+
+        OffRoad offRoad = new OffRoad(5, 60, 20, 30);
+
+        System.out.println(vehicle);
+        System.out.println(truck);
+        System.out.println(offRoad);
+
+        truck.setCargoCap(6000);
+
+        System.out.println("Nova capacidade do Truck: " + truck.getCargoCap());
+    }
+}
